@@ -1,12 +1,16 @@
 
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Verify login functionality 
 
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  Scenario: Verify successful login when username  and password is correct 
+    Given user launch site URL 
+    When user enter correct username and correct password
+    And click on login button 
+    Then Validate user should navigate to home page.
+    
+  Scenario: Verify successful login when username  and password is incorrect 
+    Given user launch site URL 
+    When user enter incorrect username and correct password
+    And click on login button 
+    Then Validate user should get error message .
+       
+    
