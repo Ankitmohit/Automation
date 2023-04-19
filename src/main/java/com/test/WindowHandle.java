@@ -45,7 +45,7 @@ public class WindowHandle {
 	wait.until(ExpectedConditions.visibilityOf(test));
 	test.click();
 		
-		
+		//GitCheck
 		
 	}
 
